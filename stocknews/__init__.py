@@ -14,7 +14,7 @@ class StockNews:
     TRADING_URL = 'https://api.worldtradingdata.com/api/v1/history'
     DATA_FOLDER = os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), 'data')
 
-    def __init__(self, stocks, news_file='news.csv', summary_file='data.csv', save_news=True, closing_hour=20,
+    def __init__(self, stocks, news_file='news.csv', summary_file='data.csv', save_news=True, closing_hour=40,
                  closing_minute=0, wt_key=None):
         """
         :param stocks: A list of Stock Symbols such as "AAPL" for Apple, NFLX for Netflix etc.
